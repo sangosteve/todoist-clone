@@ -1,0 +1,155 @@
+nav{
+    padding: 0;
+    min-width: 100%;
+    height: 40px;
+    background-color:#db4c3f;
+    color:#FFF;
+    margin: 0px;
+    z-index: 200px;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    padding-left: 42px;
+    padding-right: 42px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav div:hover .nav-icon{
+    cursor: pointer;
+}
+nav #nav-left{
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    height: 100%;
+    justify-content:space-around;
+    align-items:center;
+}
+
+nav #nav-left #search-input-wrapper{
+    height: 58%;
+    position: relative;
+    background: hsla(0,0%,100%,.2);
+    color:#FFF;
+}
+nav #nav-left #search-input-wrapper input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-indent: 30px;
+    background: hsla(0,0%,100%,.1);
+    color:#FFF;
+    border-radius: 5px;
+}
+
+nav #nav-left #search-input-wrapper input::placeholder{
+    color:#FFF;
+    margin-left: 40px;
+    font-size: 10px;
+}
+nav #nav-left #search-input-wrapper input:-ms-input-placeholder{
+
+}
+nav #nav-left #search-input-wrapper input:focus{
+    border: none;
+    outline: none;
+}
+
+nav #nav-left #search-input-wrapper #icon-search{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-50%,30%);
+    color:#FFF;
+}
+
+nav #nav-right{
+    right: 42px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    height: 100%;
+    justify-content:space-around;
+    align-items:center;
+   
+}
+
+
+nav #nav-right #profile-wrapper{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:grey
+}
+
+
+
+
+
+
+
+
+/*media queries*/
+
+
+@media only screen and (max-width: 768px) {
+    nav{
+        display: flex;
+        height: 40px;
+        padding: 0;
+    }
+
+    nav #nav-left{
+        display: flex;
+        flex-direction: row;
+        width: 35%;
+        height: 100%;
+        justify-content:space-around;
+        align-items:center;
+        
+    }
+
+    nav #nav-left #search-input-wrapper{
+        height: 58%;
+        width: 22px;
+        position: relative;
+        background: transparent;
+        color:#FFF;
+    }
+    nav #nav-left #search-input-wrapper input{
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-indent: 30px;
+        background: transparent;
+        color:#FFF;
+        border-radius: 5px;
+        
+    }
+
+    nav #nav-right{
+        right: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        height: 100%;
+        justify-content:space-around;
+        align-items:center;
+       
+    }
+    
+    
+    nav #nav-right #profile-wrapper{
+        width:20px;
+        height:20px;
+        border-radius:50%;
+        background-color:grey
+    }
+    
+}
