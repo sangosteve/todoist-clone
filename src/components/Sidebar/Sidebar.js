@@ -1,5 +1,6 @@
 import React,{useState,useContext} from "react";
 import './Sidebar.css'
+import {Link} from 'react-router-dom';
 import { BsInbox} from "react-icons/bs";
 import { BsCalendar} from "react-icons/bs";
 import { BsCardChecklist} from "react-icons/bs";
@@ -13,9 +14,15 @@ function Sidebar(){
             <div id="side-menu-container">
             <ul id="sidebar-nav-menu">
 
-                <li><BsInbox color="#246fe0" className="menu-icon"/>Inbox</li>
+              <Link to="/inbox"> 
+              <li><BsInbox color="#246fe0" className="menu-icon"/>Inbox</li>
+              </Link>
+              <Link to="/today"> 
                 <li><BsCalendar color="#058527"  className="menu-icon"/>Today</li>
+                </Link>
+                <Link to="/upcoming"> 
                 <li><BsCardChecklist  color="#692fc2" className="menu-icon"/>Upcoming</li>
+                </Link>
 
             </ul>
             <AccordionMenu/>

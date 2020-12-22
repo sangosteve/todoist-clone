@@ -1,4 +1,4 @@
-nav{
+navmenu{
     padding: 0;
     min-width: 100%;
     height: 40px;
@@ -15,10 +15,10 @@ nav{
     position: relative;
 }
 
-nav div:hover .nav-icon{
+navmenu div:hover .nav-icon{
     cursor: pointer;
 }
-nav #nav-left{
+navmenu #nav-left{
     display: flex;
     flex-direction: row;
     width: 22%;
@@ -27,13 +27,13 @@ nav #nav-left{
     align-items:center;
 }
 
-nav #nav-left #search-input-wrapper{
+navmenu #nav-left #search-input-wrapper{
     height: 58%;
     position: relative;
     background: hsla(0,0%,100%,.2);
     color:#FFF;
 }
-nav #nav-left #search-input-wrapper input{
+navmenu #nav-left #search-input-wrapper input{
     height: 100%;
     width: 100%;
     border: none;
@@ -44,20 +44,20 @@ nav #nav-left #search-input-wrapper input{
     border-radius: 5px;
 }
 
-nav #nav-left #search-input-wrapper input::placeholder{
+navmenu #nav-left #search-input-wrapper input::placeholder{
     color:#FFF;
     margin-left: 40px;
     font-size: 10px;
 }
-nav #nav-left #search-input-wrapper input:-ms-input-placeholder{
+navmenu #nav-left #search-input-wrapper input:-ms-input-placeholder{
 
 }
-nav #nav-left #search-input-wrapper input:focus{
+navmenu #nav-left #search-input-wrapper input:focus{
     border: none;
     outline: none;
 }
 
-nav #nav-left #search-input-wrapper #icon-search{
+navmenu #nav-left #search-input-wrapper #icon-search{
     position:absolute;
     top: 0;
     bottom: 0;
@@ -66,7 +66,7 @@ nav #nav-left #search-input-wrapper #icon-search{
     color:#FFF;
 }
 
-nav #nav-right{
+navmenu #nav-right{
     right: 42px;
     position: absolute;
     display: flex;
@@ -79,7 +79,7 @@ nav #nav-right{
 }
 
 
-nav #nav-right #profile-wrapper{
+navmenu #nav-right #profile-wrapper{
     width:20px;
     height:20px;
     border-radius:50%;
@@ -97,13 +97,13 @@ nav #nav-right #profile-wrapper{
 
 
 @media only screen and (max-width: 768px) {
-    nav{
+    navmenu{
         display: flex;
         height: 40px;
         padding: 0;
     }
 
-    nav #nav-left{
+    navmenu #nav-left{
         display: flex;
         flex-direction: row;
         width: 35%;
@@ -113,14 +113,14 @@ nav #nav-right #profile-wrapper{
         
     }
 
-    nav #nav-left #search-input-wrapper{
+    navmenu #nav-left #search-input-wrapper{
         height: 58%;
         width: 22px;
         position: relative;
         background: transparent;
         color:#FFF;
     }
-    nav #nav-left #search-input-wrapper input{
+    navmenu #nav-left #search-input-wrapper input{
         height: 100%;
         width: 100%;
         border: none;
@@ -132,7 +132,7 @@ nav #nav-right #profile-wrapper{
         
     }
 
-    nav #nav-right{
+    navmenu #nav-right{
         right: 0;
         position: absolute;
         display: flex;
@@ -145,7 +145,7 @@ nav #nav-right #profile-wrapper{
     }
     
     
-    nav #nav-right #profile-wrapper{
+    navmenu #nav-right #profile-wrapper{
         width:20px;
         height:20px;
         border-radius:50%;

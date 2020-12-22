@@ -1,0 +1,40 @@
+
+#Today{
+
+}
+
+span#add_task_options{
+    width: 200px;
+}
+span#add_task_options #btn-addtask{
+    width: 80px;
+    background-color: #FFFF;
+    color: gray;
+    border:none;
+    font-size: 13px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+span#add_task_options #btn-addtask:hover,
+span#add_task_options #btn-addtask:focus,
+span#add_task_options #btn-addtask:active
+ {
+  outline: none;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+}
+
+span#add_task_options #btn-addtask .nav-icon{
+    color:#db4c3f;
+    padding: 1px 1px 1px 1px;
+    border-radius: 50%;
+    
+}
+span#add_task_options #btn-addtask:hover{
+    color:#db4c3f;
+} 
+span#add_task_options #btn-addtask:hover .nav-icon{
+    color:#FFFF;
+    background-color:#db4c3f;
+}

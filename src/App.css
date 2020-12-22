@@ -21,3 +21,13 @@ body{
     min-height: 100vh;
   }
 }
+
+#app-content-wrapper{
+  display: flex;
+}
+
+#page-content-wrapper{
+  width: 80%;
+  position: absolute;
+  left: 20%;
+}
