@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     width: 80%;
-    border: solid 1px grey;
 }
 
 ul
@@ -15,14 +14,49 @@ ul
 ul#accordion-widget li div.link{
     width: 100%;
     height: 24px;
-    border-bottom:solid 1px grey;
-    border-top:solid 1px grey;
+    z-index: 1;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fafafa;
     display: flex;
     position: relative;
     align-items: center;
     text-align: center;
     font-size: 12px;
     font-weight: bolder;
+}
+
+ul#accordion-widget li div.link .icon-caret,
+ul#accordion-widget li div.link .icon-plus{
+    font-size: 16px;
+    color:#777777;
+    margin-right: 10px;
+    -moz-transition: all .6s linear;
+    -webkit-transition: all .6s linear;
+    transition: all .6s linear;
+}
+
+ul#accordion-widget li div.link .icon-caret.caret-down{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(90deg);
+}
+
+ul#accordion-widget li div.link .icon-plus{
+    position: absolute;
+    right: 2%;
+    font-weight: 20;
+    opacity: 0;
+}
+
+
+
+ul#accordion-widget li div.link:hover{
+    cursor:pointer;
+} 
+
+ul#accordion-widget li div.link:hover .icon-plus{
+    opacity: 1;
+    cursor: pointer;
 }
 
 ul.accordion-menu{
@@ -50,5 +84,8 @@ ul.accordion-menu li{
     display: flex;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fafafa;
+    z-index: 1;
 
 }
