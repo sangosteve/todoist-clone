@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { FiPlus } from "react-icons/fi";
 import "./Today.css";
+import {TodayContext} from './TodayContext'
 function Today() {
   const [show, setShow] = useState(false);
+  const [tasks,setTasks] = useContext(TodayContext);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -30,6 +32,17 @@ function Today() {
           </Button>
         </Modal.Footer>
       </Modal>
+
+      <div id="panel-tasks">
+        <ul>
+        {
+          tasks.map(task=>(
+            <li>{task.description}</li>
+          ))
+        }
+        </ul>
+      </div>
+
     </div>
   );
 }
