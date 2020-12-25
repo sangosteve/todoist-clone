@@ -1,6 +1,5 @@
 import React, { useState,useContext } from "react";
 import "./TaskList.css";
-import CheckBox from "../CheckBox/CheckBox";
 import {TodayContext} from '../../pages/Today/TodayContext';
 import axios from "axios";
 function TaskList(props) {

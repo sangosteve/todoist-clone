@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import {SideBarProvider} from './components/Sidebar/SidebarContext';
 import {AccordionMenuProvider} from './components/AccordionMenu/AccordionMenuContext'
 import {TodayProvider} from './pages/Today/TodayContext';
+import {ProjectProvider} from './Contexts/ProjectContext';
 import Today from './pages/Today/Today';
 import Inbox from './pages/Inbox/Inbox'; 
 import Upcoming from './pages/Upcoming/Upcoming';
@@ -21,6 +22,7 @@ function App() {
     <Router>
     <SideBarProvider>
     <AccordionMenuProvider>
+    <ProjectProvider> 
     <TodayProvider>
     <div className="App">
      <Header/>
@@ -38,6 +40,7 @@ function App() {
      </div>
     </div>
     </TodayProvider>
+    </ProjectProvider> 
     </AccordionMenuProvider>  
     </SideBarProvider>
     </Router>

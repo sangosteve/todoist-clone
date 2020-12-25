@@ -76,14 +76,17 @@ ul.accordion-menu.active{
     transition: max-height 0.7s ease-in;
 }
 
-ul.accordion-menu li{
-    height: 55px;
-    font-size: 14px;
+ul.accordion-menu li.list-item{
+    height: 70px;
+    font-size: 12px;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     position: relative;
     border-bottom: 1px solid #f1f1f1;
     background-color: #fafafa;
-    z-index: 1;
+    z-index: 100;
+    color: black;
+    padding:5px 24px 5px 24px;
 
 }

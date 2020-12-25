@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors')
 const TaskRoute = require('./Routes/Task.route');
+const ProjectRoute = require('./Routes/Project.route');
 
 const app = express();
 
@@ -15,6 +16,6 @@ mongoose.connect("mongodb+srv://blackjack:B7NfqpuT6cpuhY8h@cluster0.aor3g.mongod
 app.use(express.json());
 app.use(cors());
 app.use('/tasks',TaskRoute);
-
+app.use('/projects',ProjectRoute);
 
 app.listen(2020,()=>{console.log('server is listening on port 2020...')})
