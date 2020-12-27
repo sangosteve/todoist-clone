@@ -32,7 +32,7 @@ function ProjectList(props) {
   //CREATE NEW PROJECT
   function createProject(){
     
-    axios.post('http://localhost:2020/tasks', {
+    axios.post('http://localhost:2020/projects', {
       description:newProject
     })
     .then(function (response) {
